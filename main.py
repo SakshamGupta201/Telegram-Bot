@@ -5,7 +5,7 @@ import os
 
 load_dotenv()  # Load environment variables from .env file
 
-TOKEN = os.environ("TELEGRAM_BOT_TOKEN")  # Get token from environment variable
+TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]  # Get token from environment variable
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
